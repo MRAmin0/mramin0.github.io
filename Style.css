@@ -353,3 +353,46 @@ body {
         font-size: 2.2rem;
     }
 }
+
+/* --- استایل‌های منوی موبایل --- */
+.menu-toggle {
+    display: none; /* در حالت دسکتاپ مخفی است */
+    background: none;
+    border: none;
+    color: var(--light-text);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001; /* بالاتر از بقیه آیتم‌ها */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -100%; /* در ابتدا خارج از صفحه است */
+        width: 100%;
+        height: 100vh;
+        background: var(--dark-bg);
+        transition: right 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0; /* با کلیک، به داخل صفحه می‌آید */
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: block; /* در حالت موبایل نمایش داده می‌شود */
+    }
+}
