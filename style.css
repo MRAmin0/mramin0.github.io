@@ -6,7 +6,6 @@
     font-display: swap;
 }
 
-/* متغیرهای اصلی برای تم تاریک */
 :root {
     --primary-color: #4A90E2;
     --dark-bg: #1a1a1a;
@@ -16,7 +15,6 @@
     --border-color: #444;
 }
 
-/* بازنویسی متغیرها برای تم روشن */
 body.light-mode {
     --primary-color: #007BFF;
     --dark-bg: #f4f7f9;
@@ -152,7 +150,7 @@ body.light-mode .btn-secondary:hover {
     padding: 1rem 0;
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s;
 }
 body.light-mode .navbar {
     background: rgba(255, 255, 255, 0.8);
@@ -171,13 +169,13 @@ body.light-mode .navbar {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    transition: color 0.3s;
+    /* تغییر اصلی: اعمال فونت به لوگو */
+    font-family: 'Vazirmatn', sans-serif;
 }
 body.light-mode .navbar .logo {
     color: var(--text-color);
 }
 
-/* استایل دکمه تغییر تم */
 .theme-toggle {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -190,8 +188,8 @@ body.light-mode .navbar .logo {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    margin-left: 1rem;
-    transition: background-color 0.3s, color 0.3s, transform 0.4s, border-color 0.3s;
+    margin-right: 1rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.4s;
 }
 .theme-toggle:hover {
     background-color: var(--primary-color);
@@ -213,6 +211,8 @@ body.light-mode .navbar .logo {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     transition: color 0.3s ease;
+    /* تغییر اصلی: اعمال فونت به لینک‌های منو */
+    font-family: 'Vazirmatn', sans-serif;
 }
 body.light-mode .navbar .nav-links li a {
     color: var(--text-color);
@@ -229,7 +229,6 @@ body.light-mode .navbar .nav-links li a {
     font-size: 1.5rem;
     cursor: pointer;
     margin-left: 1rem;
-    transition: color 0.3s;
 }
 body.light-mode .menu-toggle {
     color: var(--text-color);
@@ -303,7 +302,7 @@ body.light-mode .menu-toggle {
     padding: 2rem;
     border-radius: 10px;
     border: 1px solid var(--border-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s, border-color 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
 body.light-mode .skill-category {
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
@@ -412,14 +411,13 @@ body.light-mode .skill-category:hover {
     text-align: center;
     padding: 2rem 0;
     border-top: 1px solid var(--border-color);
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
-    
     .nav-right {
         flex-grow: 1;
         justify-content: flex-end;
@@ -445,9 +443,8 @@ body.light-mode .skill-category:hover {
         text-align: center;
         margin: 0.5rem 0;
     }
-    
     .theme-toggle {
-        order: 2;
+        order: 2; /* دکمه تم قبل از منو همبرگر */
     }
     .menu-toggle {
         display: block;
