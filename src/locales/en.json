@@ -1,0 +1,60 @@
+{
+  "dir": "ltr",
+  "font": "font-sans",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "logo_aria": "Amin Monajati",
+    "main_menu_aria": "Main Menu",
+    "theme_toggle_aria": "Toggle Theme",
+    "lang_toggle_aria": "Change Language",
+    "menu_toggle_aria": "Toggle Menu"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Amin!",
+    "description": "Aspiring Android & Native Developer",
+    "cta": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a mobile application developer passionate about Native development and tackling new challenges in this field. My current focus is on deep diving into modern Android development with Kotlin and Jetpack Compose, advanced software architectures, and performance optimization to build fast and responsive applications. I am always ready to collaborate and learn in new projects!",
+    "avatar_alt": "Amin Monajati Avatar"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "languages": "Languages & Platforms",
+    "uiux": "UI/UX",
+    "tools": "Tools & Ecosystem"
+  },
+  "portfolio": {
+    "title": "My Projects",
+    "view_online": "View Online",
+    "github": "GitHub",
+    "weatherly": {
+      "title": "Weatherly App",
+      "desc": "A complete weather application with advanced features, including animated backgrounds, glassmorphism style, city search with suggestions, 5-day forecast, and theme settings.",
+      "alt": "Weatherly App Project"
+    },
+    "file_scanner": {
+      "title": "Duplicate File Scanner",
+      "desc": "A Python script that finds duplicate files in a specified path using SHA-256 hashing and saves the results in the console and a JSON file.",
+      "alt": "Duplicate File Scanner Project"
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "desc": "For project collaboration or any questions, please contact me via the following channels.",
+    "email_aria": "Email",
+    "linkedin_aria": "LinkedIn",
+    "github_aria": "GitHub",
+    "telegram_aria": "Telegram",
+    "discord_aria": "Discord",
+    "instagram_aria": "Instagram"
+  },
+  "footer": {
+    "rights": "© 2025 Amin Monajati. All rights reserved."
+  }
+}
