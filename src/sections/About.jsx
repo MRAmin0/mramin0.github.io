@@ -24,7 +24,7 @@ export default function About() {
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.img
-              src="static/images/IMG-614.jpg"
+              src="images/IMG-614.jpg"
               alt={t('about.avatar_alt')}
               className="w-48 h-48 rounded-full object-cover border-4 border-blue-500 shadow-xl"
               whileHover={{ scale: 1.05, rotate: 5 }}
