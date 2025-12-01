@@ -7,23 +7,28 @@ export default function Portfolio() {
 
   const projects = [
     {
-      image: 'images/Weatherly.png',
-      title: t('portfolio.weatherly.title'),
+      image: 'images/weatherly.png',
+      title: 'Weatherly',
       desc: t('portfolio.weatherly.desc'),
-      tech: 'HTML, CSS, JavaScript, OpenWeather API',
+      tech: 'Flutter, Dart, OpenWeather API',
       links: {
-        demo: 'https://mramin0.github.io/Weatherly/',
-        github: 'https://github.com/MRAmin0/Weatherly',
+        demo: 'https://weatherly-zeta.vercel.app',
+        github: 'https://github.com/mramin0/weatherly',
       },
     },
     {
-      image: 'https://placehold.co/600x400/2ECC71/FFFFFF?text=File+Scanner',
-      title: t('portfolio.file_scanner.title'),
-      desc: t('portfolio.file_scanner.desc'),
-      tech: 'Python, Hashing',
-      links: {
-        github: 'https://github.com/MRAmin0/Duplicate-File-Scanner',
-      },
+      image: 'https://placehold.co/600x400/7C3AED/FFFFFF?text=Coming+Soon',
+      title: t('portfolio.todo_app.title'),
+      desc: t('portfolio.coming_soon'),
+      tech: 'Flutter, Hive',
+      links: {},
+    },
+    {
+      image: 'https://placehold.co/600x400/EC4899/FFFFFF?text=Coming+Soon',
+      title: t('portfolio.ecommerce.title'),
+      desc: t('portfolio.coming_soon'),
+      tech: 'Flutter, Firebase',
+      links: {},
     },
   ];
 

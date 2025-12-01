@@ -15,33 +15,39 @@
   },
   "hero": {
     "greeting": "Hello, I am Amin Monajati.",
-    "description": "Aspiring Android & Native Developer",
+    "description": "Passionate Flutter & Cross-Platform Developer",
     "cta": "View Projects"
   },
   "about": {
     "title": "About Me",
-    "description": "I am a mobile application developer passionate about Native development and tackling new challenges in this field. My current focus is on deep diving into modern Android development with Kotlin and Jetpack Compose, advanced software architectures, and performance optimization to build fast and responsive applications. I am always ready to collaborate and learn in new projects!",
+    "description": "I am a Flutter developer passionate about building beautiful and efficient mobile applications. Using Flutter and Dart, I create cross-platform apps that run seamlessly on both Android and iOS. My focus is on modern UI/UX design, clean and scalable architectures, and performance optimization. I'm always learning new technologies and ready to collaborate on challenging projects!",
     "avatar_alt": "Amin Monajati Avatar"
   },
   "skills": {
     "title": "Technical Skills",
-    "languages": "Languages & Platforms",
-    "uiux": "UI/UX",
+    "languages": "Languages & Frameworks",
+    "uiux": "UI/UX & Widgets",
     "tools": "Tools & Ecosystem"
   },
   "portfolio": {
     "title": "My Projects",
     "view_online": "View Online",
     "github": "GitHub",
+    "coming_soon": "This project is currently under development and will be released soon.",
     "weatherly": {
-      "title": "Weatherly App",
-      "desc": "A complete weather application with advanced features, including animated backgrounds, glassmorphism style, city search with suggestions, 5-day forecast, and theme settings.",
-      "alt": "Weatherly App Project"
+      "title": "Flutter Weather App",
+      "desc": "A complete Flutter app with beautiful UI/UX including smooth animations, State Management with Provider/Bloc, weather API integration, and support for multiple languages and dark/light themes.",
+      "alt": "Flutter Weather App Project"
     },
-    "file_scanner": {
-      "title": "Duplicate File Scanner",
-      "desc": "A Python script that finds duplicate files in a specified path using SHA-256 hashing and saves the results in the console and a JSON file.",
-      "alt": "Duplicate File Scanner Project"
+    "todo_app": {
+      "title": "Task Management App",
+      "desc": "A modern Todo app built with Flutter featuring local storage with SQLite/Hive, beautiful animations, task categorization, and full Material Design 3 support.",
+      "alt": "Task Management App Project"
+    },
+    "ecommerce": {
+      "title": "E-Commerce App",
+      "desc": "A complete e-commerce app with Flutter including Firebase integration, authentication, shopping cart, online payment, and product management panel.",
+      "alt": "E-Commerce App Project"
     }
   },
   "contact": {

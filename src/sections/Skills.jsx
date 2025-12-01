@@ -9,17 +9,17 @@ export default function Skills() {
     {
       icon: <FaCode className="text-4xl mb-4 text-blue-500" />,
       title: t('skills.languages'),
-      items: ['Kotlin', 'Java', 'Flutter & Dart', 'Python', 'XML'],
+      items: ['Dart', 'Flutter', 'JavaScript', 'Python', 'Java'],
     },
     {
       icon: <FaPaintBrush className="text-4xl mb-4 text-purple-500" />,
       title: t('skills.uiux'),
-      items: ['Jetpack Compose', 'XML Layouts', 'Material Design', 'HTML5 & CSS3'],
+      items: ['Material Design', 'Custom Widgets', 'Animations', 'Responsive Design', 'Cupertino'],
     },
     {
       icon: <FaTools className="text-4xl mb-4 text-pink-500" />,
       title: t('skills.tools'),
-      items: ['Android Studio', 'Gradle', 'Git & GitHub', 'Firebase', 'RESTful APIs'],
+      items: ['VS Code', 'Android Studio', 'Firebase', 'Git & GitHub', 'REST APIs'],
     },
   ];
 
