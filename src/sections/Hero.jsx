@@ -1,5 +1,29 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
+
+const Typewriter = ({ text, delay = 100 }) => {
+  const [currentText, setCurrentText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    setCurrentText('');
+    setCurrentIndex(0);
+  }, [text]);
+
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setCurrentText(prev => prev + text[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, delay);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, delay, text]);
+
+  return <span>{currentText}</span>;
+};
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -25,7 +49,12 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent ${t('font')}`}
         >
-          {t('hero.greeting')}
+          <Typewriter text={t('hero.greeting')} delay={100} />
+          <motion.span
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{ repeat: Infinity, duration: 0.8 }}
+            className="inline-block w-1 h-12 ml-1 bg-blue-500 align-middle"
+          />
         </motion.h1>
 
         <motion.p
