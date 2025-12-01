@@ -7,7 +7,7 @@ export default function Portfolio() {
 
   const projects = [
     {
-      image: '/legacy_backup/static/images/Weatherly.png',
+      image: '/static/images/Weatherly.png',
       title: t('portfolio.weatherly.title'),
       desc: t('portfolio.weatherly.desc'),
       tech: 'Flutter, Dart, OpenWeatherMap API',

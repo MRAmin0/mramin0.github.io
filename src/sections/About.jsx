@@ -25,7 +25,7 @@ export default function About() {
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
-              src="/legacy_backup/static/images/IMG-614.jpg"
+              src="/static/images/IMG-614.jpg"
               alt={t('about.avatar_alt')}
               className="w-40 h-40 rounded-full border-4 border-blue-500 object-cover"
             />
