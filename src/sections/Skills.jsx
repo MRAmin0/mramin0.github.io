@@ -24,7 +24,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-900/50">
+    <section id="skills" className="py-20 px-6 bg-gray-100 dark:bg-gray-900/50">
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function Skills() {
               </h3>
               <ul className="space-y-3">
                 {category.items.map((item, i) => (
-                  <li key={i} className="text-gray-300 flex items-center gap-2">
+                  <li key={i} className="text-gray-700 dark:text-gray-300 flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full" />
                     {item}
                   </li>

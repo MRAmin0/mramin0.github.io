@@ -15,7 +15,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-900/50">
+    <section id="contact" className="py-20 px-6 bg-gray-100 dark:bg-gray-900/50">
       <div className="container mx-auto max-w-4xl text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className={`text-gray-300 mb-12 ${t('font')}`}
+          className={`text-gray-700 dark:text-gray-300 mb-12 ${t('font')}`}
         >
           {t('contact.desc')}
         </motion.p>
@@ -64,7 +64,7 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className={`mt-16 pt-8 border-t border-gray-800 text-gray-400 ${t('font')}`}
+          className={`mt-16 pt-8 border-t border-gray-300 dark:border-gray-800 text-gray-600 dark:text-gray-400 ${t('font')}`}
         >
           {t('footer.rights')}
         </motion.footer>

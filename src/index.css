@@ -4,9 +4,12 @@
 
 @layer base {
   body {
-    @apply bg-gray-900 text-white font-sans;
+    @apply bg-white text-gray-900 font-fa transition-colors duration-300;
   }
-  
+  .dark body {
+    @apply bg-gray-900 text-white;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -19,7 +22,8 @@
   }
 
   @keyframes gradient {
-    0%, 100% {
+    0%,
+    100% {
       background-position: 0% 50%;
     }
     50% {
@@ -27,23 +31,46 @@
     }
   }
 
-  .glass {
+  /* Dark mode glass effects */
+  .dark .glass {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 
-  .glass-strong {
+  /* Light mode glass effects */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .glass-strong {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(30px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   }
 
-  .glass-card {
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .dark .glass-card {
     background: rgba(17, 25, 40, 0.75);
     backdrop-filter: blur(16px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
   }
 }

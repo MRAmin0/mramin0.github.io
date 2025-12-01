@@ -11,7 +11,11 @@ export default function Navbar() {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
-    document.documentElement.classList.toggle('light', savedTheme === 'light');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   useEffect(() => {
@@ -23,7 +27,11 @@ export default function Navbar() {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('light', newTheme === 'light');
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   };
 
   const toggleLanguage = () => {
@@ -62,7 +70,7 @@ export default function Navbar() {
               <a
                 key={link.key}
                 href={link.href}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors"
               >
                 {t(`nav.${link.key}`)}
               </a>
@@ -73,7 +81,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <button
               onClick={toggleLanguage}
-              className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-all hover:scale-110"
+              className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 flex items-center justify-center transition-all hover:scale-110"
               aria-label={t('nav.lang_toggle_aria')}
             >
               <span className="text-sm font-bold">
@@ -83,7 +91,7 @@ export default function Navbar() {
 
             <button
               onClick={toggleTheme}
-              className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-all hover:scale-110"
+              className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 flex items-center justify-center transition-all hover:scale-110"
               aria-label={t('nav.theme_toggle_aria')}
             >
               {theme === 'dark' ? <FaSun /> : <FaMoon />}
@@ -91,7 +99,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center"
+              className="md:hidden w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 flex items-center justify-center"
               aria-label={t('nav.menu_toggle_aria')}
             >
               {isMenuOpen ? <FaTimes /> : <FaBars />}

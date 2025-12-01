@@ -20,16 +20,16 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="glass-card rounded-3xl p-10 shadow-2xl hover:shadow-blue-500/20 transition-shadow duration-300"
+          className="glass-card rounded-3xl p-8 md:p-12"
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <img
-              src="/static/images/IMG-614.jpg"
+            <motion.img
+              src="static/images/IMG-614.jpg"
               alt={t('about.avatar_alt')}
-              className="w-40 h-40 rounded-full border-4 border-blue-500 object-cover"
+              className="w-48 h-48 rounded-full object-cover border-4 border-blue-500 shadow-xl"
+              whileHover={{ scale: 1.05, rotate: 5 }}
             />
-            <p className={`text-gray-300 leading-relaxed ${t('font')}`}>
+            <p className={`text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed ${t('font')}`}>
               {t('about.description')}
             </p>
           </div>

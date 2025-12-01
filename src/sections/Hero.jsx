@@ -34,7 +34,7 @@ export default function Hero() {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Animated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 opacity-20 animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 opacity-20 animate-gradient" />
       
       {/* Glassmorphism Container */}
       <motion.div
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className={`text-xl md:text-2xl text-gray-300 mb-8 ${t('font')}`}
+          className={`text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 ${t('font')}`}
         >
           {t('hero.description')}
         </motion.p>

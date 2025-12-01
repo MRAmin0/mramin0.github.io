@@ -7,12 +7,12 @@ export default function Portfolio() {
 
   const projects = [
     {
-      image: '/static/images/Weatherly.png',
+      image: 'static/images/Weatherly.png',
       title: t('portfolio.weatherly.title'),
       desc: t('portfolio.weatherly.desc'),
-      tech: 'Flutter, Dart, OpenWeatherMap API',
+      tech: 'HTML, CSS, JavaScript, OpenWeather API',
       links: {
-        demo: 'https://weatherylapp.netlify.app/',
+        demo: 'https://mramin0.github.io/Weatherly/',
         github: 'https://github.com/MRAmin0/Weatherly',
       },
     },
@@ -63,10 +63,10 @@ export default function Portfolio() {
                 <h3 className={`text-2xl font-bold mb-3 ${t('font')}`}>
                   {project.title}
                 </h3>
-                <p className={`text-gray-300 mb-4 ${t('font')}`}>
+                <p className={`text-gray-700 dark:text-gray-300 mb-4 ${t('font')}`}>
                   {project.desc}
                 </p>
-                <p className="text-sm text-gray-400 mb-4">{project.tech}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{project.tech}</p>
 
                 <div className="flex gap-4">
                   {project.links.demo && (
@@ -84,7 +84,7 @@ export default function Portfolio() {
                     href={project.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors ${t('font')}`}
+                    className={`flex items-center gap-2 px-4 py-2 bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white rounded-lg transition-colors ${t('font')}`}
                   >
                     <FaGithub />
                     {t('portfolio.github')}
